@@ -1,0 +1,8 @@
+project: savantenvs/arrow
+target: arrow-csv-fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/arrow-csv-fuzz/testsuite
+cmds:
+  - cmd: /mayhem/arrow-csv-fuzz
+    libfuzzer: true

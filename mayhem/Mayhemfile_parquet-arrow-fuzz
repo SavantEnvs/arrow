@@ -1,0 +1,8 @@
+project: savantenvs/arrow
+target: parquet-arrow-fuzz
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parquet-arrow-fuzz/testsuite
+cmds:
+  - cmd: /mayhem/parquet-arrow-fuzz
+    libfuzzer: true
